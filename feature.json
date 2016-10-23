@@ -1,0 +1,465 @@
+[
+  {
+    "uri": "features/login.feature",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "description": "  As a user i want to login to the application",
+    "line": 1,
+    "elements": [
+      {
+        "id": "login-feature;valida-login-credentials",
+        "keyword": "Scenario",
+        "name": "Valida login Credentials",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 4
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "Valida login Credentials****Executing Before Hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35243
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "i'm on homepage",
+            "line": 6,
+            "output": [
+              "homepage"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36573
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i enter username \"testing@email.com\"",
+            "line": 7,
+            "output": [
+              "UserName is ::testing@email.com"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17416
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "i enter password \"password\"",
+            "line": 8,
+            "output": [
+              "Password is ::password"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12118
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "i should see user logged in",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7484
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "i see the user name saikrishna",
+            "line": 10,
+            "output": [
+              "saikrishna"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10504
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9389
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;example-for-outline-scenarios;;2",
+        "keyword": "Scenario Outline",
+        "name": "Example for outline scenarios",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "i see the user name Sai",
+            "line": 18,
+            "output": [
+              "Sai"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27734
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10362
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;example-for-outline-scenarios;;3",
+        "keyword": "Scenario Outline",
+        "name": "Example for outline scenarios",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "i see the user name Krishna",
+            "line": 19,
+            "output": [
+              "Krishna"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16973
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9210
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;example-for-outline-scenarios;;4",
+        "keyword": "Scenario Outline",
+        "name": "Example for outline scenarios",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "i see the user name test",
+            "line": 20,
+            "output": [
+              "test"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17223
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8789
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;example-for-outline-scenarios;;5",
+        "keyword": "Scenario Outline",
+        "name": "Example for outline scenarios",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "i see the user name test2",
+            "line": 21,
+            "output": [
+              "test2"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16619
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9012
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/logout.feature",
+    "id": "logout-testing",
+    "keyword": "Feature",
+    "name": "Logout testing",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "logout-testing;as-a-user-i-should-log-out-successfully",
+        "keyword": "Scenario",
+        "name": "As a user i should log out successfully",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "output": [
+              "As a user i should log out successfully****Executing Before Hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17105
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "i'm on homepage",
+            "line": 6,
+            "output": [
+              "homepage"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16556
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "i enter username",
+            "line": 7,
+            "output": [
+              "username"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8857
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "i enter password",
+            "line": 8,
+            "output": [
+              "password"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23073
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "i should see user logged out",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/logout_steps.rb:1"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": " (RuntimeError)\n./features/step_definitions/logout_steps.rb:2:in `/^i should see user logged out$/'\nfeatures/logout.feature:9:in `Then i should see user logged out'",
+              "duration": 82670
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27210
+            }
+          }
+        ]
+      },
+      {
+        "id": "logout-testing;success-logout",
+        "keyword": "Scenario",
+        "name": "Success logout",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "as a user i'm logged in to the application",
+            "line": 13,
+            "output": [
+              "homepage",
+              "username",
+              "password"
+            ],
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 383969
+            }
+          }
+        ],
+        "after": [
+          {
+            "output": [
+              "Executing after hook"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9156
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

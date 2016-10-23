@@ -1,0 +1,2 @@
+smoke: --tags @smoke --format progress --format html --out=features_report.html
+default: --format html --out=features_reportregression.html
